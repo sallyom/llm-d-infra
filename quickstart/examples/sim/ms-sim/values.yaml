@@ -1,6 +1,16 @@
 # Creates the resources for simulating llm-d inference
 multinode: false
 
+# Tracing configuration example
+# Note: EPP is deployed by GAIE chart in this example, not by modelservice
+# tracing:
+#   enabled: true
+#   otelCollectorEndpoint: "http://otel-collector:4317"
+#   samplingRate: 0.1
+#   components:
+#     routingProxy: true  # Only routing proxy is controlled by this chart
+#     vllm: false
+
 modelArtifacts:
   uri: "hf://random"
   size: 5Mi

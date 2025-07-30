@@ -1,5 +1,16 @@
 multinode: true
 
+# Example tracing configuration - uncomment to enable distributed tracing
+# Note: EPP is deployed by this modelservice chart (epp.create: true)
+# tracing:
+#   enabled: true
+#   otelCollectorEndpoint: "http://otel-collector:4317"
+#   samplingRate: 0.1
+#   components:
+#     eppInferenceScheduler: true  # EPP is controlled by this chart
+#     routingProxy: true
+#     vllm: false  # vLLM tracing not yet implemented
+
 modelArtifacts:
   uri: "hf://deepseek-ai/DeepSeek-R1-0528"
   size: 100Gi

@@ -1,6 +1,16 @@
 # This values.yaml file creates the resources for Qwen/Qwen3-0.6B
 multinode: false
 
+# Example tracing configuration - uncomment to enable distributed tracing
+# Note: EPP is deployed by GAIE chart in this example, not by modelservice
+# tracing:
+#   enabled: true
+#   otelCollectorEndpoint: "http://otel-collector:4317"
+#   samplingRate: 0.1
+#   components:
+#     routingProxy: true  # Only routing proxy is controlled by this chart
+#     vllm: false  # vLLM tracing not yet implemented
+
 modelArtifacts:
   uri: "hf://Qwen/Qwen3-0.6B"
   size: 20Gi

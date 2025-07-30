@@ -10,6 +10,7 @@
 # -- Parameters for bitnami.common dependency
 common: {}
 
+
 # -- Common parameters
 # -- Override Kubernetes version
 kubeVersion: ""
