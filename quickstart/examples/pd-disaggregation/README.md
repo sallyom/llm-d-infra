@@ -44,7 +44,7 @@ As a result, as you tune you P/D deployments, we suggest focusing on the followi
    # ran from root of repo
    cd quickstart
    export HF_TOKEN=$(HFTOKEN)
-   ./llmd-infra-installer.sh --namespace llm-d-pd -r infra-pd -f examples/pd-disaggregation/infra-pd/values.yaml --disable-metrics-collection
+   ./llmd-infra-installer.sh --namespace llm-d-pd -r infra-pd -f examples/pd-disaggregation/infra-pd/values.yaml
    ```
 
    **_NOTE:_** The release name `infra-pd` is important here, because it matches up with pre-built values files used in this example.
