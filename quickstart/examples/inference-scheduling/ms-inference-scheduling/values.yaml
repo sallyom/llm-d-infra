@@ -35,6 +35,8 @@ routing:
 decode:
   create: true
   replicas: 2
+  podAnnotations:
+    instrumentation.opentelemetry.io/inject-go: "llm-d-routing-sidecar-instrumentation"
   monitoring:
     podmonitor:
       enabled: false
